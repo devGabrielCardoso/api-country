@@ -36,6 +36,7 @@ body{
     border: none;
     border-radius: 1.5em;
     cursor: pointer;
+    width: 120px;
     transition: 0.5s ease;
 }
 
@@ -61,6 +62,8 @@ body{
     width: 45%;
     min-width: 7.5em;
     margin: 1.8em auto 1.2em auto;
+    -webkit-box-shadow: -5px 5px 17px 0px rgba(209,209,209,1);
+    /* -webkit-box-shadow: 8px 18px 61px -14px rgba(0,0,0,0.12); */
     /* box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25); */
 }
 
@@ -93,4 +96,17 @@ body{
     text-align: left;
     color: rgb(230, 67, 67);
     font-weight: 600;
+}
+
+@media (max-width: 558px){
+    .search-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .search-wrapper input::-webkit-input-placeholder{
+        font-size: 90%;
+        text-align: center;
+    }
 }
